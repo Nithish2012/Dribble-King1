@@ -478,6 +478,8 @@ function handleAbilityKey(code) {
 
 function activateAbilityByKey(k) {
   if (!k) return;
+
+    
   const a = AB[k];
   if (!a.unlocked || a.active || a.cd > 0) return;
   // Special cases
